@@ -2,7 +2,8 @@
  *  Copyright 2011-2024 Branimir Karadzic. All rights reserved.
  *  License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
-
+/*
+#pragma once
 #include "allocator.cpp"
 #include "bounds.cpp"
 #include "bx.cpp"
@@ -25,3 +26,4 @@
 #include "thread.cpp"
 #include "timer.cpp"
 #include "url.cpp"
+*/

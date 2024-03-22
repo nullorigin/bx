@@ -3,7 +3,7 @@
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
 
-#include <bx/hash.h>
+#include <bx/hash.hpp>
 
 namespace bx
 {

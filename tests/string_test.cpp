@@ -3,7 +3,7 @@
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
 
-#include "test.h"
+#include "test.hpp"
 #include <bx/filepath.h>
 #include <bx/string.h>
 #include <bx/handlealloc.h>

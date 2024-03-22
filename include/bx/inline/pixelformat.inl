@@ -2,9 +2,10 @@
  * Copyright 2010-2024 Branimir Karadzic. All rights reserved.
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
-
+#pragma once
+#include "bx/pixelformat.hpp"
 #ifndef BX_PIXEL_FORMAT_H_HEADER_GUARD
-#	error "Must be included from bx/pixelformat.h"
+#	error "Must be included from bx/pixelformat.hpp"
 #endif // BX_PIXEL_FORMAT_H_HEADER_GUARD
 
 namespace bx

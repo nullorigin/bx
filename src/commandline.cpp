@@ -3,8 +3,8 @@
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
 
-#include <bx/commandline.h>
-#include <bx/string.h>
+#include <bx/commandline.hpp>
+#include <bx/string.hpp>
 
 namespace bx
 {

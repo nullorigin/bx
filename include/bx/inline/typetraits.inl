@@ -2,11 +2,11 @@
  * Copyright 2010-2024 Branimir Karadzic. All rights reserved.
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
-
+#pragma once
+#include "bx/typetraits.hpp"
 #ifndef BX_TYPETRAITS_H_HEADER_GUARD
-#	error "Must be included from bx/typetraits.h!"
+#	error "Must be included from bx/typetraits.hpp!"
 #endif // BX_TYPETRAITS_H_HEADER_GUARD
-
 namespace bx
 {
 	// Reference(s):

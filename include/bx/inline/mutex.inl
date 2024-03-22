@@ -2,9 +2,10 @@
  * Copyright 2010-2024 Branimir Karadzic. All rights reserved.
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
-
+#pragma once
+#include "bx/mutex.hpp"
 #ifndef BX_MUTEX_H_HEADER_GUARD
-#	error "Must be included from bx/mutex.h!"
+#	error "Must be included from bx/mutex.hpp!"
 #endif // BX_MUTEX_H_HEADER_GUARD
 
 namespace bx

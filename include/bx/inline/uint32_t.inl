@@ -22,9 +22,10 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE
-
+#pragma once
+#include "bx/uint32_t.hpp"
 #ifndef BX_UINT32_T_H_HEADER_GUARD
-#	error "Must be included from bx/uint32_t.h"
+#	error "Must be included from bx/uint32_t.hpp"
 #endif // BX_UINT32_T_H_HEADER_GUARD
 
 namespace bx

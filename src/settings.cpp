@@ -3,7 +3,7 @@
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
 
-#include <bx/settings.h>
+#include <bx/settings.hpp>
 
 namespace
 {
@@ -19,7 +19,7 @@ BX_PRAGMA_DIAGNOSTIC_IGNORED_CLANG_GCC("-Wunused-function");
 
 BX_PRAGMA_DIAGNOSTIC_PUSH();
 BX_PRAGMA_DIAGNOSTIC_IGNORED_CLANG_GCC("-Wsign-compare");
-#include <ini/ini.h>
+#include <ini/ini.hpp>
 BX_PRAGMA_DIAGNOSTIC_POP();
 }
 

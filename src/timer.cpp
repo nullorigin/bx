@@ -3,10 +3,10 @@
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
 
-#include <bx/timer.h>
+#include <bx/timer.hpp>
 
 #if BX_CRT_NONE
-#	include "crt0.h"
+#	include "crt0.hpp"
 #elif BX_PLATFORM_ANDROID
 #	include <time.h> // clock, clock_gettime
 #elif BX_PLATFORM_EMSCRIPTEN

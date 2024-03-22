@@ -3,34 +3,36 @@
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
 
-#include "test.h"
-#include <bx/spscqueue.h>
-#include <bx/mpscqueue.h>
+#include "test.hpp"
+#include <bx/mpscqueue.hpp>
+#include <bx/spscqueue.hpp>
 
-void* bitsToPtr(uintptr_t _ui)
-{
-	union { uintptr_t ui; void* ptr; } cast = { _ui };
-	return cast.ptr;
+void *bitsToPtr(uintptr_t _ui) {
+  union {
+    uintptr_t ui;
+    void *ptr;
+  } cast = {_ui};
+  return cast.ptr;
 }
 
-uintptr_t ptrToBits(void* _ptr)
-{
-	union { void* ptr; uintptr_t ui; } cast = { _ptr };
-	return cast.ui;
+uintptr_t ptrToBits(void *_ptr) {
+  union {
+    void *ptr;
+    uintptr_t ui;
+  } cast = {_ptr};
+  return cast.ui;
 }
 
-TEST_CASE("SpSc", "")
-{
-	bx::DefaultAllocator allocator;
-	bx::SpScUnboundedQueue queue(&allocator);
-	queue.push(bitsToPtr(0xdeadbeef) );
-	REQUIRE(0xdeadbeef == ptrToBits(queue.pop() ) );
+TEST_CASE("SpSc", "") {
+  bx::DefaultAllocator allocator;
+  bx::SpScUnboundedQueue queue(&allocator);
+  queue.push(bitsToPtr(0xdeadbeef));
+  REQUIRE(0xdeadbeef == ptrToBits(queue.pop()));
 }
 
-TEST_CASE("MpSc", "")
-{
-	bx::DefaultAllocator allocator;
-	bx::MpScUnboundedQueueT<void> queue(&allocator);
-	queue.push(bitsToPtr(0xdeadbeef) );
-	REQUIRE(0xdeadbeef == ptrToBits(queue.pop() ) );
+TEST_CASE("MpSc", "") {
+  bx::DefaultAllocator allocator;
+  bx::MpScUnboundedQueueT<void> queue(&allocator);
+  queue.push(bitsToPtr(0xdeadbeef));
+  REQUIRE(0xdeadbeef == ptrToBits(queue.pop()));
 }

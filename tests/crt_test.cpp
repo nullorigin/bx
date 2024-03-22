@@ -3,7 +3,7 @@
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
 
-#include "test.h"
+#include "test.hpp"
 
 TEST_CASE("memSet", "")
 {

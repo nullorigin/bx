@@ -3,7 +3,7 @@
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
 
-#include "test.h"
+#include "test.hpp"
 #include <bx/simd_t.h>
 #include <bx/math.h>
 #include <bx/string.h>

@@ -3,13 +3,13 @@
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
 
-#include <bx/mutex.h>
+#include <bx/mutex.hpp>
 
 #if BX_CONFIG_SUPPORTS_THREADING
 
 #if BX_CRT_NONE
 #	include <bx/cpu.h>
-#	include "crt0.h"
+#	include "crt0.hpp"
 #elif  BX_PLATFORM_ANDROID \
 	|| BX_PLATFORM_LINUX   \
 	|| BX_PLATFORM_IOS     \

@@ -2,11 +2,11 @@
  * Copyright 2010-2015 Branimir Karadzic. All rights reserved.
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
-
+#pragma once
+#include "bx/simd_t.hpp"
 #ifndef BX_SIMD_T_H_HEADER_GUARD
-#	error "xmacro file, must be included from simd_*.h"
+#	error "xmacro file, must be included from simd_*.hpp"
 #endif // BX_FLOAT4_T_H_HEADER_GUARD
-
 // included from float4_t.h
 BX_SIMD128_IMPLEMENT_SWIZZLE(x, x, x, x)
 BX_SIMD128_IMPLEMENT_SWIZZLE(x, x, x, y)

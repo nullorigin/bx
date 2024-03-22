@@ -3,10 +3,10 @@
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
 
-#include <bx/cpu.h>
-#include <bx/math.h>
-#include <bx/string.h>
-#include <bx/uint32_t.h>
+#include <bx/cpu.hpp>
+#include <bx/math.hpp>
+#include <bx/string.hpp>
+#include <bx/uint32_t.hpp>
 
 #include <type_traits>
 

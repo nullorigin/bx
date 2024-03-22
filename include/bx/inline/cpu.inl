@@ -2,9 +2,10 @@
  * Copyright 2010-2024 Branimir Karadzic. All rights reserved.
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
-
+#pragma once
+#include "bx/cpu.hpp"
 #ifndef BX_CPU_H_HEADER_GUARD
-#	error "Must be included from bx/cpu.h!"
+#	error "Must be included from bx/cpu.hpp!"
 #endif // BX_CPU_H_HEADER_GUARD
 
 #if BX_COMPILER_MSVC

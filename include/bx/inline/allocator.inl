@@ -2,9 +2,10 @@
  * Copyright 2010-2024 Branimir Karadzic. All rights reserved.
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
-
+#pragma once
+#include "bx/allocator.hpp"
 #ifndef BX_ALLOCATOR_H_HEADER_GUARD
-#	error "Must be included from bx/allocator.h"
+#	error "Must be included from bx/allocator.hpp"
 #endif // BX_ALLOCATOR_H_HEADER_GUARD
 
 inline void* operator new(size_t, bx::PlacementNewTag, void* _ptr)

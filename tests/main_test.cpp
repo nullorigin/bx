@@ -3,7 +3,7 @@
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
 
-#include "test.h"
+#include "test.hpp"
 
 int runAllTests(int _argc, const char* _argv[]);
 

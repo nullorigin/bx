@@ -3,10 +3,10 @@
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
 
-#include <bx/math.h>
-#include <bx/uint32_t.h>
+#include <bx/math.hpp>
+#include <bx/uint32_t.hpp>
 
-#include <bx/string.h>
+#include <bx/string.hpp>
 
 namespace bx
 {

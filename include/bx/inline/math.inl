@@ -4,13 +4,14 @@
  */
 
 // FPU math lib
-
+#pragma once
+#include "bx/math.hpp"
 #ifndef BX_MATH_H_HEADER_GUARD
-#	error "Must be included from bx/math.h!"
+#	error "Must be included from bx/math.hpp!"
 #endif // BX_MATH_H_HEADER_GUARD
 
-#include <bx/simd_t.h>
-#include <bx/uint32_t.h>
+#include <bx/simd_t.hpp>
+#include <bx/uint32_t.hpp>
 
 namespace bx
 {

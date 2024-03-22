@@ -3,7 +3,7 @@
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
 
-#include <bx/sort.h>
+#include <bx/sort.hpp>
 
 namespace bx
 {

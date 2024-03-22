@@ -3,13 +3,13 @@
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
 
-#include <bx/debug.h>
-#include <bx/string.h>       // isPrint
-#include <bx/readerwriter.h> // WriterI
+#include <bx/debug.hpp>
+#include <bx/string.hpp>       // isPrint
+#include <bx/readerwriter.hpp> // WriterI
 #include <inttypes.h>        // PRIx*
 
 #if BX_CRT_NONE
-#	include "crt0.h"
+#	include "crt0.hpp"
 #elif BX_PLATFORM_ANDROID
 #	include <android/log.h>
 #elif  BX_PLATFORM_WINDOWS \

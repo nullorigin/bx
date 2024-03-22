@@ -2,9 +2,10 @@
  * Copyright 2010-2024 Branimir Karadzic. All rights reserved.
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
-
+#pragma once
+#include "bx/float4x4_t.hpp"
 #ifndef BX_FLOAT4X4_H_HEADER_GUARD
-#	error "Must be included from bx/float4x4.h!"
+#	error "Must be included from bx/float4x4_t.hpp!"
 #endif // BX_FLOAT4X4_H_HEADER_GUARD
 
 namespace bx

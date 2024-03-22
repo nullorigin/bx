@@ -3,7 +3,7 @@
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
 
-#include <bx/easing.h>
+#include <bx/easing.hpp>
 
 namespace bx
 {

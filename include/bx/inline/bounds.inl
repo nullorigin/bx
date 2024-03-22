@@ -2,9 +2,10 @@
  * Copyright 2011-2024 Branimir Karadzic. All rights reserved.
  * License: https://github.com/bkaradzic/bgfx#license-bsd-2-clause
  */
-
+#pragma once
+#include "bounds.hpp"
 #ifndef BX_BOUNDS_H_HEADER_GUARD
-#	error "Must be included from bounds.h!"
+#	error "Must be included from bounds.hpp!"
 #endif // BX_BOUNDS_H_HEADER_GUARD
 
 namespace bx

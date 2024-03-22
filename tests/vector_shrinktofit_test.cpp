@@ -24,45 +24,45 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include "test.h"
+#include "test.hpp"
 
-#include <tinystl/allocator.h>
-#include <tinystl/vector.h>
+#include <tinystl/allocator.hpp>
+#include <tinystl/vector.hpp>
 
 TEST(vector_shrinktofit) {
-	typedef tinystl::vector<int> vector;
+  typedef tinystl::vector<int> vector;
 
-	{
-		vector v;
-		CHECK(v.capacity() == 0);
-		v.clear();
-		v.shrink_to_fit();
-		CHECK(v.capacity() == 0);
-	}
+  {
+    vector v;
+    CHECK(v.capacity() == 0);
+    v.clear();
+    v.shrink_to_fit();
+    CHECK(v.capacity() == 0);
+  }
 
-	{
-		vector v(10, 0);
-		CHECK(v.capacity() >= 10);
-		v.shrink_to_fit();
-		CHECK(v.capacity() == 10);
-	}
+  {
+    vector v(10, 0);
+    CHECK(v.capacity() >= 10);
+    v.shrink_to_fit();
+    CHECK(v.capacity() == 10);
+  }
 
-	{
-		vector v(10, 0);
-		CHECK(v.capacity() >= 10);
-		v.erase(v.end() - 1, v.end());
-		CHECK(v.size() == 9);
-		CHECK(v.capacity() >= 10);
-		v.shrink_to_fit();
-		CHECK(v.capacity() == 9);
-	}
+  {
+    vector v(10, 0);
+    CHECK(v.capacity() >= 10);
+    v.erase(v.end() - 1, v.end());
+    CHECK(v.size() == 9);
+    CHECK(v.capacity() >= 10);
+    v.shrink_to_fit();
+    CHECK(v.capacity() == 9);
+  }
 
-	{
-		vector v(10, 0);
-		CHECK(v.capacity() >= 10);
-		const int* ptr = v.data();
-		v.shrink_to_fit();
-		CHECK(v.capacity() >= 10);
-		CHECK(v.data() == ptr);
-	}
+  {
+    vector v(10, 0);
+    CHECK(v.capacity() >= 10);
+    const int *ptr = v.data();
+    v.shrink_to_fit();
+    CHECK(v.capacity() >= 10);
+    CHECK(v.data() == ptr);
+  }
 }

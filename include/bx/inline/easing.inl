@@ -2,9 +2,10 @@
  * Copyright 2011-2024 Branimir Karadzic. All rights reserved.
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
-
+#pragma once
+#include "bx/easing.hpp"
 #ifndef BX_EASING_H_HEADER_GUARD
-#	error "Must be included from bx/easing.h!"
+#	error "Must be included from bx/easing.hpp!"
 #endif // BX_EASING_H_HEADER_GUARD
 
  // Reference(s):

@@ -3,7 +3,7 @@
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
 
-#include <bx/process.h>
+#include <bx/process.hpp>
 
 #include <stdio.h>
 

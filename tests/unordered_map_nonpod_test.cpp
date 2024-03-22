@@ -24,18 +24,20 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include "test.h"
+#include "test.hpp"
 
-#include <tinystl/allocator.h>
-#include <tinystl/unordered_map.h>
+#include <tinystl/allocator.hpp>
+#include <tinystl/unordered_map.hpp>
 
 namespace {
-	struct Foo { int bar; };
-}
+struct Foo {
+  int bar;
+};
+} // namespace
 
 TEST(uomap_nonpod_compiles) {
 
-	// verify this compiles
-	typedef tinystl::unordered_map<int, Foo> map;
-	map m;
+  // verify this compiles
+  typedef tinystl::unordered_map<int, Foo> map;
+  map m;
 }

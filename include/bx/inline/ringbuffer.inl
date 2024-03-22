@@ -2,9 +2,10 @@
  * Copyright 2010-2024 Branimir Karadzic. All rights reserved.
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
-
+#pragma once
+#include "bx/ringbuffer.hpp"
 #ifndef BX_RINGBUFFER_H_HEADER_GUARD
-#	error "Must be included from bx/ringbuffer.h!"
+#	error "Must be included from bx/ringbuffer.hpp!"
 #endif // BX_RINGBUFFER_H_HEADER_GUARD
 
 namespace bx

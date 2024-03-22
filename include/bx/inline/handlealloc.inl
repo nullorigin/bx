@@ -2,9 +2,10 @@
  * Copyright 2010-2024 Branimir Karadzic. All rights reserved.
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
-
+#pragma once
+#include "bx/handlealloc.hpp"
 #ifndef BX_HANDLE_ALLOC_H_HEADER_GUARD
-#	error "Must be included from bx/handlealloc.h!"
+#	error "Must be included from bx/handlealloc.hpp!"
 #endif // BX_HANDLE_ALLOC_H_HEADER_GUARD
 
 namespace bx

@@ -3,10 +3,10 @@
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
 
-#include <bx/allocator.h>
-#include <bx/file.h>
-#include <bx/hash.h>
-#include <bx/string.h>
+#include <bx/allocator.hpp>
+#include <bx/file.hpp>
+#include <bx/hash.hpp>
+#include <bx/string.hpp>
 
 namespace bx
 {

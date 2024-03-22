@@ -3,9 +3,9 @@
  * License: https://github.com/bkaradzic/bgfx#license-bsd-2-clause
  */
 
-#include <bx/rng.h>
-#include <bx/math.h>
-#include <bx/bounds.h>
+#include <bx/rng.hpp>
+#include <bx/math.hpp>
+#include <bx/bounds.hpp>
 
 namespace bx
 {

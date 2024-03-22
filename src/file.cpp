@@ -3,7 +3,7 @@
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
 
-#include <bx/file.h>
+#include <bx/file.hpp>
 
 #ifndef BX_CONFIG_CRT_FILE_READER_WRITER
 #	define BX_CONFIG_CRT_FILE_READER_WRITER !BX_CRT_NONE
@@ -14,7 +14,7 @@
 #endif // BX_CONFIG_CRT_DIRECTORY_READER
 
 #if BX_CRT_NONE
-#	include "crt0.h"
+#	include "crt0.hpp"
 #else
 #	if BX_CONFIG_CRT_DIRECTORY_READER
 #		include <dirent.h>

@@ -2,9 +2,10 @@
  * Copyright 2010-2024 Branimir Karadzic. All rights reserved.
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
-
+#pragma once
+#include "bx/simd_t.hpp"
 #ifndef BX_SIMD_T_H_HEADER_GUARD
-#	error "Must be included from bx/simd_t.h!"
+#	error "Must be included from bx/simd_t.hpp!"
 #endif // BX_SIMD_T_H_HEADER_GUARD
 
 namespace bx

@@ -2,12 +2,13 @@
  * Copyright 2010-2024 Branimir Karadzic. All rights reserved.
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
-
+#pragma once
+#include "bx/error.hpp"
 #ifndef BX_ERROR_H_HEADER_GUARD
-#	error "Must be included from bx/error!"
+#	error "Must be included from bx/error.hpp!"
 #endif // BX_ERROR_H_HEADER_GUARD
 
-#include <bx/debug.h>
+#include <bx/debug.hpp>
 
 namespace bx
 {

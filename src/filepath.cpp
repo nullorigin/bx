@@ -3,9 +3,9 @@
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
 
-#include <bx/file.h>
-#include <bx/os.h>
-#include <bx/readerwriter.h>
+#include <bx/file.hpp>
+#include <bx/os.hpp>
+#include <bx/readerwriter.hpp>
 
 #if !BX_CRT_NONE
 #	if BX_CRT_MSVC

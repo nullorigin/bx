@@ -3,11 +3,10 @@
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
 
-#include <bx/debug.h>
-#include <bx/readerwriter.h>
-
+#include <bx/debug.hpp>
+#include <bx/readerwriter.hpp>
 #if !BX_CRT_NONE
-#	include <string.h> // memcpy, memmove, memset
+#	include <cstring> // memcpy, memmove, memset
 #endif // !BX_CRT_NONE
 
 namespace bx
@@ -90,7 +89,7 @@ namespace bx
 #if BX_CRT_NONE
 		memCopyRef(_dst, _src, _numBytes);
 #else
-		::memcpy(_dst, _src, _numBytes);
+		 mempcpy(_dst, _src, _numBytes);
 #endif // BX_CRT_NONE
 	}
 
@@ -148,7 +147,7 @@ namespace bx
 #if BX_CRT_NONE
 		memMoveRef(_dst, _src, _numBytes);
 #else
-		::memmove(_dst, _src, _numBytes);
+		memmove(_dst, _src, _numBytes);
 #endif // BX_CRT_NONE
 	}
 
@@ -192,7 +191,7 @@ namespace bx
 #if BX_CRT_NONE
 		memSetRef(_dst, _ch, _numBytes);
 #else
-		::memset(_dst, _ch, _numBytes);
+		memset(_dst, _ch, _numBytes);
 #endif // BX_CRT_NONE
 	}
 

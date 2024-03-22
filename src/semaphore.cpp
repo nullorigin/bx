@@ -3,7 +3,7 @@
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
 
-#include <bx/semaphore.h>
+#include <bx/semaphore.hpp>
 
 #if BX_CONFIG_SUPPORTS_THREADING
 

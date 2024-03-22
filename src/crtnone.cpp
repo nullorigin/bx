@@ -3,15 +3,15 @@
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
 
-#include <bx/debug.h>
-#include <bx/file.h>
-#include <bx/math.h>
-#include <bx/sort.h>
-#include <bx/timer.h>
+#include <bx/debug.hpp>
+#include <bx/file.hpp>
+#include <bx/math.hpp>
+#include <bx/sort.hpp>
+#include <bx/timer.hpp>
 
 #if BX_CRT_NONE
 
-#include "crt0.h"
+#include "crt0.hpp"
 
 #define NOT_IMPLEMENTED() \
 	{ bx::debugPrintf("crtnone: %s not implemented\n", BX_FUNCTION); abort(); }

@@ -3,8 +3,8 @@
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
 
-#include <bx/os.h>
-#include <bx/thread.h>
+#include <bx/os.hpp>
+#include <bx/thread.hpp>
 
 #if BX_CONFIG_SUPPORTS_THREADING
 
@@ -13,7 +13,7 @@
 #endif
 
 #if BX_CRT_NONE
-#	include "crt0.h"
+#	include "crt0.hpp"
 #elif  BX_PLATFORM_ANDROID \
 	|| BX_PLATFORM_LINUX   \
 	|| BX_PLATFORM_IOS     \

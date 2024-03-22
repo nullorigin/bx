@@ -12,7 +12,7 @@ Loading an ini file and retrieving values
 
 ```cpp
 #define INI_IMPLEMENTATION
-#include "ini.h"
+#include "ini.hpp"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -48,7 +48,7 @@ Creating a new ini file
 
 ```cpp
 #define INI_IMPLEMENTATION
-#include "ini.h"
+#include "ini.hpp"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -104,7 +104,7 @@ This is done with the following code:
     #define INI_IMPLEMENTATION
     #define INI_MALLOC( ctx, size ) ( my_custom_malloc( ctx, size ) )
     #define INI_FREE( ctx, ptr ) ( my_custom_free( ctx, ptr ) )
-    #include "ini.h"
+    #include "ini.hpp"
 
 where `my_custom_malloc` and `my_custom_free` are your own memory allocation/deallocation functions. The `ctx` parameter
 is an optional parameter of type `void*`. When `ini_create` or `ini_load` is called, you can pass in a `memctx` 
@@ -125,7 +125,7 @@ to substitute them for your own. Here's an example:
     #define INI_MEMCPY( dst, src, cnt ) ( my_memcpy_func( dst, src, cnt ) )
     #define INI_STRLEN( s ) ( my_strlen_func( s ) )
     #define INI_STRICMP( s1, s2 ) ( my_stricmp_func( s1, s2 ) )
-    #include "ini.h"
+    #include "ini.hpp"
 
 If no custom function is defined, ini.h will default to the C runtime library equivalent.
 

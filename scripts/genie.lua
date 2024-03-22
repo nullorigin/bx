@@ -61,7 +61,7 @@ project "bx.test"
 	files {
 		path.join(BX_DIR, "3rdparty/catch/catch_amalgamated.cpp"),
 		path.join(BX_DIR, "tests/*_test.cpp"),
-		path.join(BX_DIR, "tests/*.h"),
+		path.join(BX_DIR, "tests/*.hpp"),
 		path.join(BX_DIR, "tests/dbg.*"),
 	}
 
@@ -104,7 +104,7 @@ project "bx.bench"
 
 	files {
 		path.join(BX_DIR, "tests/*_bench.cpp"),
-		path.join(BX_DIR, "tests/*_bench.h"),
+		path.join(BX_DIR, "tests/*_bench.hpp"),
 		path.join(BX_DIR, "tests/dbg.*"),
 	}
 

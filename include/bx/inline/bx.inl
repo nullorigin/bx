@@ -2,11 +2,11 @@
  * Copyright 2010-2024 Branimir Karadzic. All rights reserved.
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
-
+#pragma once
+#include "bx/bx.hpp"
 #ifndef BX_H_HEADER_GUARD
-#	error "Must be included from bx/bx.h!"
+#	error "Must be included from bx/bx.hpp!"
 #endif // BX_H_HEADER_GUARD
-
 namespace bx
 {
 	// Reference(S):
@@ -82,7 +82,7 @@ namespace bx
 	template<>
 	struct LimitsT<float, true>
 	{
-		static constexpr float min = -kFloatLargest;
+		static constexpr float min = -(kFloatLargest);
 		static constexpr float max =  kFloatLargest;
 	};
 

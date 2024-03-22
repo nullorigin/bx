@@ -3,9 +3,9 @@
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
 
-#include <bx/string.h>
-#include <bx/os.h>
-#include <bx/uint32_t.h>
+#include <bx/string.hpp>
+#include <bx/os.hpp>
+#include <bx/uint32_t.hpp>
 
 #if BX_CRT_MSVC
 #	include <direct.h>
@@ -49,7 +49,7 @@
 #	elif BX_PLATFORM_OSX
 #		include <mach/mach.h> // mach_task_basic_info
 #	elif BX_PLATFORM_ANDROID
-#		include "debug.h" // getTid is not implemented...
+#		include "debug.hpp" // getTid is not implemented...
 #	endif // BX_PLATFORM_ANDROID
 #endif // BX_PLATFORM_
 

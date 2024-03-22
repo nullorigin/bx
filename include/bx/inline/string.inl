@@ -2,9 +2,10 @@
  * Copyright 2010-2024 Branimir Karadzic. All rights reserved.
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
-
+#pragma once
+#include "bx/string.hpp"
 #ifndef BX_STRING_H_HEADER_GUARD
-#	error "Must be included from bx/string.h!"
+#error "Must be included from bx/string.hpp!"
 #endif // BX_STRING_H_HEADER_GUARD
 
 #if BX_CRT_MSVC && !defined(va_copy)

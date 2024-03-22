@@ -2,9 +2,10 @@
  * Copyright 2010-2024 Branimir Karadzic. All rights reserved.
  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
  */
-
+#pragma once
+#include "bx/rng.hpp"
 #ifndef BX_RNG_H_HEADER_GUARD
-#	error "Must be included from bx/rng.h!"
+#	error "Must be included from bx/rng.hpp!"
 #endif // BX_RNG_H_HEADER_GUARD
 
 namespace bx
