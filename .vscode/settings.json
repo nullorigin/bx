@@ -1,3 +1,4 @@
 {
-    "cmake.sourceDirectory": "/home/admin/code/bx"
+    "cmake.sourceDirectory": "/home/matt/code/bx",
+    "cmake.cmakePath": "/usr/bin/cmake"
 }
